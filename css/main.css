@@ -122,7 +122,7 @@ h2 {
     color: black
 }
 .loading {
-	background: url('../img/ico_loading.gif') no-repeat center center;
+	background: url('https://jcalvomendoza.github.io/img/ico_loading.gif') no-repeat center center;
 }
 section {
 	min-width: 960px;
