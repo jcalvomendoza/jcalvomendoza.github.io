@@ -192,7 +192,7 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/Javier Calvo Mendoza Header-100.jpg')}
+#slide-1 .bcg {background-image:url('https://github.com/jcalvomendoza/jcalvomendoza.github.io/blob/master/img/Javier%20Calvo%20Mendoza%20Header-100.jpg')}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
