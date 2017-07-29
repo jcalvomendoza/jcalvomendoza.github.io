@@ -192,21 +192,21 @@ main {
 	}
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('https://github.com/jcalvomendoza/jcalvomendoza.github.io/blob/master/img/Javier%20Calvo%20Mendoza%20Header-100.jpg')}
+#slide-1 .bcg {background-image:url('https://jcalvomendoza.github.io/img/Javier Calvo Mendoza Header-100.jpg')}
 #slide-1 .hsContent {
 	bottom: 200px;
 	top: auto;
 }
 
 /* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/ChicagoBooth-100.jpg')}
+#slide-2 .bcg {background-image:url('https://jcalvomendoza.github.io/img/ChicagoBooth-100.jpg')}
 #slide-2 .hsContent {
     bottom: 22px;
     text-align: center;
 }
 
 /* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/ColgateWillowPath2-100.jpg')}
+#slide-3 .bcg {background-image:url('https://jcalvomendoza.github.io/img/ColgateWillowPath2-100.jpg')}
 #slide-3 .hsContent {
     top: auto;
     bottom: 15px;
