@@ -112,7 +112,7 @@ h2 {
     color: black
 }
 .loading {
-	background: url('https://jcalvomendoza.github.io/img/Ricardio.gif') no-repeat center center;
+	background-color: black;
 }
 section {
 	min-width: 960px;
