@@ -1,15 +1,5 @@
 /* 
- _____   _           _         _                        _                  
-|_   _| | |         | |       | |                      | |                 
-  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___ 
-  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
- _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
- \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
-
-Oh nice, welcome to the stylesheet of dreams. 
-It has it all. Classes, ID's, comments...the whole lot:)
-Enjoy responsibly!
-@ihatetomatoes
+I deserve no credit for any of this, the guys below vvv bless their hearts for making my site possible.
 
 */
 /*
@@ -122,7 +112,7 @@ h2 {
     color: black
 }
 .loading {
-	background: url('https://jcalvomendoza.github.io/img/ico_loading.gif') no-repeat center center;
+	background: url('https://jcalvomendoza.github.io/img/Ricardio.gif') no-repeat center center;
 }
 section {
 	min-width: 960px;
