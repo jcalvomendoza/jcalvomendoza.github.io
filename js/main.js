@@ -58,7 +58,7 @@
 
 $(document).on("scroll", function() {
 
-	if($(document).scrollTop()>10) {
+	if($(document).scrollTop()> $(window).height()*.8) {
 		$("header").removeClass("collapsedNavigationBar").addClass("expandedNavigationBar");
 	} else {
 		$("header").removeClass("expandedNavigationBar").addClass("collapsedNavigationBar");
@@ -73,12 +73,16 @@ $(document).on("scroll", function() {
 
 $(".chicagoBooth").mouseover(function() {
 	$(".chicagoBooth").fadeOut("fast", function (){
+		$("#slide-2 h2").height("40%");
+		$("#slide-2 h2").css("top", "20%");
 		$(".chicagoBooth").attr("src","img/mba_concentrations.png").fadeIn();
 	});
 })
 
 $(".chicagoBooth").mouseout(function() {
 	$(".chicagoBooth").fadeOut("fast", function (){
+		$("#slide-2 h2").height("60%");
+		$("#slide-2 h2").css("top", "10%");
 		$(".chicagoBooth").attr("src","https://jcalvomendoza.github.io/img/BoothLogo.png").fadeIn();
 	});
 })
