@@ -305,6 +305,16 @@ main {
 #slide-4 .hsContent {
     text-align: center;
 }
+
+#slide-5 .bcg {background-image:url('https://jcalvomendoza.github.io/img/Opaque Work Space.png')}
+#slide-5 .hsContent {
+    text-align: center;
+}
+    #slide-5 h2{
+        height: 60%;
+        top: 10%;
+    }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
