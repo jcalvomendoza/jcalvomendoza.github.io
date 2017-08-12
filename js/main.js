@@ -55,6 +55,20 @@
 		
 } )( jQuery );
 
+
+$(document).on("scroll", function() {
+
+	if($(document).scrollTop()>10) {
+		$("header").removeClass("collapsedNavigationBar").addClass("expandedNavigationBar");
+	} else {
+		$("header").removeClass("expandedNavigationBar").addClass("collapsedNavigationBar");
+	}
+	
+});
+
+
+
+
 //fade in Booth concentrations when you hover over Booth Logo
 
 $(".chicagoBooth").mouseover(function() {

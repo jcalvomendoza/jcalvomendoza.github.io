@@ -102,8 +102,15 @@ textarea {
      background-color: #eeeeee 0.3;
  }
 
+ .expandedNavigationBar {
+     top: 0px;
+ }
+
+  .collapsedNavigationBar {
+     top: -36px;
+ }
+
  .headerContainer {
-     height: 36px;
      width: 100%;
  }
 
@@ -141,7 +148,8 @@ nav img.logo {
      color: #555555;
  }
 
- a {
+ a,
+ header {
      transition: 0.7s;
  }
 
