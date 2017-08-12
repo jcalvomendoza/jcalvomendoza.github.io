@@ -211,14 +211,11 @@ main {
     .hsContent h1{
         color: white;
         position: relative;
-        top: 20%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-		padding: 0px 0px;
-        width: 100%;
+        top: -60%;
+        left: 0%;
+		padding: 0 0 0 0;
         height: 100%;
-        margin: relative;
+        width: 100%;
     }
 
 	.hsContent h2  {
@@ -260,12 +257,12 @@ main {
 }
 
 /* Slide 1 */
-#slide-1 .bcg {background-image:url('/img/skylineCover.jpg')}
+#slide-1 .bcg {background-image:url('https://jcalvomendoza.github.io/img/skylineCover.jpg')}
 #slide-1 .hsContent {
     text-align: center;
 }
-#slide-1 .scalable-image{
-    height: 50%;
+#slide-1 .banner-image{
+    width: 100%;
 }
 
 /* Slide 2 */
@@ -277,6 +274,14 @@ main {
         height: 60%;
         top: 10%;
     }
+
+.chicagoBooth {
+    height: 100%;;
+}
+
+.colgateUniversity {
+    height: 100%;
+}
 
 /* Slide 3 */
 #slide-3 .bcg {background-image:url('https://jcalvomendoza.github.io/img/ColgateWillowPath2-100.jpg')}

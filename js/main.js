@@ -54,3 +54,31 @@
 	}
 		
 } )( jQuery );
+
+//fade in Booth concentrations when you hover over Booth Logo
+
+$(".chicagoBooth").mouseover(function() {
+	$(".chicagoBooth").fadeOut("fast", function (){
+		$(".chicagoBooth").attr("src","img/mba_concentrations.png").fadeIn();
+	});
+})
+
+$(".chicagoBooth").mouseout(function() {
+	$(".chicagoBooth").fadeOut("fast", function (){
+		$(".chicagoBooth").attr("src","https://jcalvomendoza.github.io/img/BoothLogo.png").fadeIn();
+	});
+})
+
+//fade in Colgate majors when you hover over Colgate logo
+
+$(".colgateUniversity").mouseover(function() {
+	$(".colgateUniversity").fadeOut("fast", function (){
+		$(".colgateUniversity").attr("src","img/ba_majors.png").fadeIn();
+	});
+})
+
+$(".colgateUniversity").mouseout(function() {
+	$(".colgateUniversity").fadeOut("fast", function (){
+		$(".colgateUniversity").attr("src","https://jcalvomendoza.github.io/img/Colgate University Logo.png").fadeIn();
+	});
+})
