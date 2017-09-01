@@ -1,19 +1,3 @@
-/* 
-I deserve no credit for any of this, the guys below vvv bless their hearts for making my site possible.
-
-*/
-/*
- * HTML5 Boilerplate
- *
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
-
 html,
 button,
 input,
@@ -22,487 +6,357 @@ textarea {
     color: #222;
 }
 
-body {
-    font-size: 1em;
-    line-height: 1.4;
+.loading {
+    background: linear-gradient(45deg, red, #FF6400);
+    -webkit-transition: none;
+    -moz-transition: none;
+    transition: none;
 }
 
-/*
- * Remove text-shadow in selection highlight: h5bp.com/i
- * These selection rule sets have to be separate.
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
- */
-
-img {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
+main, body, html {
+	height: 100%;
+	min-height: 100%;
+    background-color: #ffffff;
     margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-    resize: vertical;
-}
-
-/* ==========================================================================
-   Chrome Frame prompt
-   ========================================================================== */
-
-.chromeframe {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
 }
 
 
- header {
-     z-index: 1;
-     position: fixed;
-     height: 36px;
-     width: 100%;
-     background-color: #eeeeee;
- }
+header {
+    z-index: 1;
+    position: fixed;
+    height: 36px;
+    width: 100%;
+} 
 
- .expandedNavigationBar {
-     top: 0px;
- }
-
-  .collapsedNavigationBar {
-     top: -36px;
- }
-
- .headerContainer {
-     width: 100%;
- }
-
-nav img.logo {
-    height: 25px;
-    padding: 5px 0 0 10px;
-}
-
- ul{
+ul{
     margin: 7px;
     padding: 0 10px 0 0;
     float: right;
  }
 
  ul li {
-     font-family: Arial, Helvetica, sans-serif;
-     font-weight: bold;
-     color: #aaa;
+     font-family: 'Dosis', sans-serif;
+     font-size: 3vh;
+     font-weight: 400;
+     color: #ffffff;
      display: inline;
      margin: 10px;
  }
 
- a:link {
-     text-decoration: none;
-     color: #aaa;
- }
-
- a:visited {
-     text-decoration: none;
-     color: #aaa;
- }
-
+.about_me_nav_link,
+.education_nav_link,
+.work_nav_link,
+.personal_nav_link,
+.contact_me_nav_link {
+    opacity: .2;
+    transition: opacity 200ms ease-in;
+}
  a:hover {
+     opacity: 1;
+ }
+ a:link,
+ a:visited {
+     color: #ffffff;
      text-decoration: none;
-     color: #222;
+     opacity: .2;
  }
 
- a,
- header {
-     transition: 0.7s;
- }
 
-/* ==========================================================================
-   Parallax Scroll
-   ========================================================================== */
-body, html {
-	height: 100%;
-	min-height: 100%;
-	background-color: #000000;
-}
 
-.no-js {
-	padding-top: 106px;
-}
-h2 {
-    margin-top: 100;
-    color: black
-}
-.loading {
-	background-color: black;
-}
-section {
-	min-width: 960px;
-	opacity: 0;
-}
-.loaded section,
-.no-js section {
-	opacity: 1;
-	-webkit-transition: opacity 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out;
-	transition: opacity 300ms ease-out;
-}
-main {
-	overflow-x: hidden;
-}
-#preload {
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-.bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
+/* Hero CSS */
+
+.hero {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background: linear-gradient(45deg, red, #FF6400);
 	background-attachment: fixed;
+	height: 100%;
+	width: 100%;
+}
+h1{
+    color: white;
+    font-size: 15vh;
+    font-family: 'Oswald', sans-serif;
+    user-select: none;
+}
+h1:hover{
+    cursor: default;
+}
+.fn{
+    grid-column: 7;
+    grid-row: 2;
+    text-align: right;
+}
+.fn h1{
+    margin: 0 1.38em 0 0;
+}
+.ln{
+    grid-column: 7;
+    grid-row: 3;
+    text-align: right;
+}
+.ln h1{
+    margin: -8vh 3.3em 0 0;
+    font-size: 6.1vh;
+}
+.preffix {
+    grid-column: 7;
+    grid-row: 3;
+    text-align: right;
+}
+.preffix h1{
+    margin: 1vh 11.75em 0 0;
+    font-size: 5vh;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+    animation: preffix_animation 16s infinite;
+}
+.im_a_adjective{
+    grid-column: 7;
+    grid-row: 3;
+    text-align: right;
+}
+.im_a_adjective h1{
+    margin: 1vh 4.5em 0 0;
+    font-size: 5vh;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+}
+
+.pm {
+    opacity: 100;
+    animation: pm 16s infinite;
+}
+.traveller {
+    opacity: 0;
+    animation: traveller 16s infinite;
+}
+.polyglot {
+    opacity: 0;
+    animation: polyglot 16s infinite;
+}
+.MBA {
+    opacity: 0;
+    animation: MBA 16s infinite;
+}
+.team_member {
+    opacity: 0;
+    animation: team_member 16s infinite;
+}
+.movie_fanatic {
+    opacity: 0;
+    animation: movie_fanatic 16s infinite;
+}
+.ux_thinker {
+    opacity: 0;
+    animation: ux_thinker 16s infinite;
+}
+.hockey_amateur {
+    opacity: 0;
+    animation: hockey_amateur 16s infinite;
+}
+.suffix {
+    grid-column: 7;
+    grid-row: 3;
+    text-align: right;
+}
+.suffix h1{
+    margin: 1vh 4em 0 0;
+    font-size: 5vh;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+}
+
+
+/* Animations for "I'm a animation */
+
+@keyframes preffix_animation {
+    0% {margin: 1vh 11.75em 0 0;} /* 11.6 difference from previous em values */
+    12.5% {margin: 1vh 8.5em 0 0;}
+    25% {margin: 1vh 8.2em 0 0;}
+    37.5% {margin: 1vh 7em 0 0;}
+    50% {margin: 1vh 10.8em 0 0;}
+    62.5% {margin: 1vh 10.3em 0 0;}
+    75% {margin: 1vh 9.2em 0 0;}
+    87.5% {margin: 1vh 11.4em 0 0;}
+    100% {margin: 1vh 11.75em 0 0;}
+}
+@keyframes pm {
+    0% {opacity: 100;}
+    12.5% {opacity: 0;}
+    87.5% {opacity: 0;}
+}
+@keyframes traveller {
+    0% {opacity: 0;}
+    12.5% {opacity: 100;}
+    25% {opacity: 0;}
+}
+@keyframes polyglot {
+    12.5% {opacity: 0}
+    25% {opacity: 100;}
+    37.5% {opacity: 0;}
+}
+@keyframes MBA {
+    25% {opacity: 0}
+    37.5% {opacity: 100;}
+    50% {opacity: 0;}
+}
+@keyframes team_member {
+    37.5% {opacity: 0}
+    50% {opacity: 100;}
+    62.5% {opacity: 0;}
+}
+@keyframes movie_fanatic {
+    50% {opacity: 0}
+    62.5% {opacity: 100;}
+    75% {opacity: 0;}
+}
+@keyframes ux_thinker {
+    62.5% {opacity: 0}
+    75% {opacity: 100;}
+    87.5% {opacity: 0;}
+}
+@keyframes hockey_amateur {
+    75% {opacity: 0}
+    87.5% {opacity: 100;}
+    100% {opacity: 0;}
+}
+
+
+.learn_more {
+    grid-column: 1/8;
+    position: relative;
+    top: 77%;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .3;
+    animation: learn_more 2s infinite;
+}
+.learn_more h1 {
+    margin: 15vh 0 0 0;
+    font-size: 3vh;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+    transition: opacity 500ms ease-in-out;
+}
+
+@keyframes learn_more {
+    50% {top: 79%; opacity: .7;}
+    100% {top: 77%; opacity: .3;}
+}
+
+
+/* about me section */
+
+.about_me {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image:url("/Users/javiercalvomendoza/OneDrive/Website/v2/img/javier_skyline.png"), linear-gradient(45deg, red, #FF6400);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.about_me_blurb {
+    grid-column: 4/7;
+    text-align: right;
+    opacity: 0;
+    transition-duration: .2s
+}
+.about_me_blurb h1{
+    margin: 15vh 4em 0 0;
+    font-size: 5vmin;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+}
+
+h2{
+    font-size: 4vmin;
+    color: white;
+    user-select: none;
+    font-family: 'Dosis', sans-serif;
+}
+
+.education {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image: linear-gradient(45deg, red, #FF6400);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+	background-repeat: no-repeat;
 	background-size: cover;
 	height: 100%;
 	width: 100%;
 }
-
-.hsContainer {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-	position: relative;
+.chicago_booth {
+    grid-column: 1/5;
+}
+.chicago_booth h1 {
+    font-size: 10vmin;
+    margin: 15vh 0 0 2em;
 }
 
-.hsContent {
-	width: 100%;
-	height: 100%;
-	position: absolute;
+.chicago_booth h2{
+    margin: 1vh 0 0 5.1em;
+}
+.colgate {
+    grid-column: 1/5;
+}
+.colgate h1 {
+    font-size: 10vmin;
+    margin: 20vh 0 0 2em;
+}
+.colgate h2{
+    margin: 1vh 0 0 5.1em;
 }
 
-    .hsContent h1{
-        color: white;
-        position: relative;
-        top: -60%;
-        left: 0%;
-		padding: 0 0 0 0;
-        height: 100%;
-        width: 100%;
-    }
-
-	.hsContent h2  {
-        color: white;
-        position: relative;
-        top: 20%;
-        bottom: 0;
-        left: 0;
-        right: 0;
-		padding: 0px 0px;
-        width: 100%;
-        height: 40%;
-        margin: relative;
-    }
-    
-    	.hsContent h3  {
-        color: white;
-        position: relative;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-    
-	.hsContent p {
-		width: 400px;
-		color: #b2b2b2;
-	}
-	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
-    }
-    
-    .scalable-image {
-        height: 100%;
+.graduation_pic {
+    grid-column: 5/7;
+    grid-row: 1/5;
+    overflow: hidden;
+    background: url("/Users/javiercalvomendoza/OneDrive/Website/v2/img/colgate_graduation_2.png"), linear-gradient(45deg, red, #FF6300);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .2;
 }
 
-/* Slide 1 */
-#slide-1 .bcg {background-image:url('https://jcalvomendoza.github.io/img/skylineCover.jpg')}
-#slide-1 .hsContent {
-    text-align: center;
-}
-#slide-1 .banner-image{
+.contact_me {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    background-image: linear-gradient(45deg, red, #FF6400);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 10%;
     width: 100%;
-}
-
-/* Slide 2 */
-#slide-2 .bcg {background-image:url('https://jcalvomendoza.github.io/img/ChicagoBooth-100.jpg')}
-#slide-2 .hsContent {
-    text-align: center;
-}
-    #slide-2 h2{
-        height: 60%;
-        top: 10%;
-    }
-    
-.chicagoBooth {
-    height: 100%;;
-}
-
-/* Slide 3 */
-#slide-3 .bcg {background-image:url('https://jcalvomendoza.github.io/img/ColgateWillowPath2-100.jpg')}
-#slide-3 .hsContent {
-    text-align: center;
-}
-	#slide-3 h2 {
-        color: white;
-        font-family: "Times New Roman", Times, serif;
-	}
-.colgateUniversity {
-    height: 100%;
-}
-
-/* Slide 4 */
-#slide-4 .hsContent {
-    text-align: center;
-}
-
-#slide-5 .bcg {background-image:url('https://jcalvomendoza.github.io/img/Opaque Work Space.png')}
-#slide-5 .hsContent {
-    text-align: center;
-}
-    #slide-5 h2{
-        top: 20%;
-    }
-
-.mcmasterCarr {
-    height: 100%;
-} 
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Image replacement
- */
-
-.ir {
-    background-color: transparent;
-    border: 0;
     overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+}
+.contact_links {
+    grid-column: 1/8;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    top: 25%;
+}
+.contact_me h2 {
+    margin: 0 auto 0 auto;
 }
 
-.ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
-}
-
-/*
- * Hide from both screenreaders and browsers: h5bp.com/u
- */
-
-.hidden {
-    display: none !important;
-    visibility: hidden;
-}
-
-/*
- * Hide only visually, but have it available for screenreaders: h5bp.com/v
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-/*
- * Extends the .visuallyhidden class to allow the element to be focusable
- * when navigated to via the keyboard: h5bp.com/p
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-/*
- * Hide visually and from screenreaders, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
-}
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
-/*
- * For IE 6/7 only
- * Include this rule to trigger hasLayout and contain floats.
- */
-
-.clearfix {
-    *zoom: 1;
-}
-
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
-
-@media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
-
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid required HTTP connection: h5bp.com/r
-   ========================================================================== */
-
-@media print {
-    * {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster: h5bp.com/s */
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
-
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
-
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
-
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
-
-    /*
-     * Don't show links for images, or javascript/internal links
-     */
-
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
-        content: "";
-    }
-
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
-
-    thead {
-        display: table-header-group; /* h5bp.com/t */
-    }
-
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
-
-    img {
-        max-width: 100% !important;
-    }
-
-    @page {
-        margin: 0.5cm;
-    }
-
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
-
-    h2,
-    h3 {
-        page-break-after: avoid;
-    }
+.scalable-image {
+    height: 5vh;
 }
