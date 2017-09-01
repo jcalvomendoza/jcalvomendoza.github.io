@@ -227,7 +227,7 @@ h1:hover{
 .learn_more {
     grid-column: 1/8;
     position: relative;
-    top: 77%;
+    top: 77vh;
     margin-left: auto;
     margin-right: auto;
     opacity: .3;
@@ -242,8 +242,8 @@ h1:hover{
 }
 
 @keyframes learn_more {
-    50% {top: 79%; opacity: .7;}
-    100% {top: 77%; opacity: .3;}
+    50% {top: 79vh; opacity: .7;}
+    100% {top: 77vh; opacity: .3;}
 }
 
 
