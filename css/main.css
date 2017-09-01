@@ -253,7 +253,7 @@ h1:hover{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
-    background-image:url("/Users/javiercalvomendoza/OneDrive/Website/v2/img/javier_skyline.png"), linear-gradient(45deg, red, #FF6400);
+    background-image:url("img/javier_skyline.png"), linear-gradient(45deg, red, #FF6400);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-position: center center;
@@ -322,7 +322,7 @@ h2{
     grid-column: 5/7;
     grid-row: 1/5;
     overflow: hidden;
-    background: url("/Users/javiercalvomendoza/OneDrive/Website/v2/img/colgate_graduation_2.png"), linear-gradient(45deg, red, #FF6300);
+    background: url("img/colgate_graduation_2.png"), linear-gradient(45deg, red, #FF6300);
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-position: center center;
