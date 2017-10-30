@@ -331,6 +331,33 @@ h2{
     opacity: .2;
 }
 
+.hockey {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    background-image:url("https://jcalvomendoza.github.io/img/Patriots_hockey.jpg"), linear-gradient(45deg, red, #FF6400);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+.hockey_blurb {
+    grid-column: 4/7;
+    text-align: right;
+    opacity: 0;
+    transition-duration: .2s
+}
+.hockey_blurb h1{
+    margin: 15vh 4em 0 0;
+    font-size: 5vmin;
+    font-weight: 100;
+    font-family: 'Dosis', sans-serif;
+}
+
 .contact_me {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
