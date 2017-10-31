@@ -108,6 +108,10 @@ $(document).on("scroll", function() {
 		$(".graduation_pic").css("opacity", scrollpct.toString());
 	});
 
+	$(document).on("scroll", function() {
+		var scrollpct = ($(document).scrollTop()- ($(window).height()*2.2))*1.5/$(window).height();
+		$(".hockey_blurb").css("opacity", scrollpct.toString());
+	});
 
 /* NAV BAR ANIMATIONS */
 
