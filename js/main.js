@@ -99,7 +99,7 @@ $(document).on("scroll", function() {
 	/* Then I figured this badboy out */
 	
 	$(document).on("scroll", function() {
-		var scrollpct = $(document).scrollTop()/$(window).height();
+		var scrollpct = ($(document).scrollTop()- ($(window).height()*0.2))*1.5/$(window).height();
 		$(".about_me_blurb").css("opacity", scrollpct.toString());
 	});
 

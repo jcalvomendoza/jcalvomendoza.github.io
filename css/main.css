@@ -336,7 +336,7 @@ h2{
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr);
     background-image:url("https://jcalvomendoza.github.io/img/Patriots_hockey_closeup.png"), linear-gradient(45deg, red, #FF6400);
-    background-blend-mode: lighten;
+    background-blend-mode: soft-light;
     background-attachment: fixed;
     background-position: center center;
 	background-repeat: no-repeat;
