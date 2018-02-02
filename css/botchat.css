@@ -409,7 +409,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
 .wc-message-from-me svg.wc-message-callout {
   right: -6px; }
 
-/* from bot */
+/* from bot  */
 .wc-message-from-bot {
   float: left;
   margin-left: 8px; }
