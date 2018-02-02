@@ -415,7 +415,7 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   margin-left: 8px; }
 
 .wc-message-from-bot .wc-message-content {
-  background-color: rgba(255, 255, 255);
+  background-color: white;
   color: rgb(255, 72, 0); }
 
 .wc-message-from-bot svg.wc-message-callout path {
