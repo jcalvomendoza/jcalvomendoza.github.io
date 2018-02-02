@@ -10,6 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/botchat.css">
         <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
         <script src="js/vendor/modernizr-2.7.1.min.js"></script>
@@ -32,6 +33,7 @@
                     </ul>
                 </nav>
             </div>
+            <div id="BotChatGoesHere"></div>
         </header>
     <body class="loading">
         <main>
@@ -108,7 +110,43 @@
                         </div>
                     </section>
         </main>
+        <footer>
+        </footer>
+<!--           <iframe src='https://webchat.botframework.com/embed/SuaviBot?s=lLRbSWYLQfg.cwA.l1w.3yC4FYEQJXwMFtO4QKQIEe-6fIGKiRCCO8kTQGq7_js'></iframe>-->
+        </footer>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+        <script src="/js/botchat.js"></script> 
+        <script>
+            const params = BotChat.queryParams(location.search);
+    
+            const user = {
+            id: params['userid'] || 'userid',
+            name: params['username'] || 'Future Boss Person'
+            };
+    
+            const bot = {
+            id: params['botid'] || 'botid',
+            name: params['botname'] || 'JaviBot'
+            };
+    
+            window['botchatDebug'] = params['debug'] && params['debug'] === 'true';
+    
+            BotChat.App({
+            bot: bot,
+            locale: params['locale'],
+            resize: 'detect',
+            // sendTyping: true,    // defaults to false. set to true to send 'typing' activities to bot (and other users) when user is typing
+            user: user,
+            // locale: 'es-es', // override locale to Spanish
+    
+            directLine: {
+                domain: params['domain'],
+                secret: [],//'r8lyCN8Exdg.cwA.zfM.eIKawCSxQU-VmGEQjpX9GFumeUv_W76v_QB7Y8nP0q0',
+                token: params['t'],
+                webSocket: params['webSocket'] && params['webSocket'] === 'true' // defaults to true
+            }
+            }, document.getElementById('BotChatGoesHere'));
+        </script>
         <script src="js/imagesloaded.js"></script>
         <script src="js/skrollr.js"></script>
         <script src="js/main.js"></script>

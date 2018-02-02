@@ -97,20 +97,31 @@ $(document).on("scroll", function() {
     });*/
 
 	/* Then I figured this badboy out */
+
+	$(document).on("scroll", function() {
+		var scrollpct1 = (($(window).height()*1) - $(document).scrollTop()*10)/$(window).height();
+		document.getElementById("BotChatGoesHere").style.opacity = scrollpct1.toString();
+	});
 	
+/*	$(document).on("scroll", function() {
+		var scrollpct2 = (($(window).height()*1) - $(document).scrollTop()*9)/$(window).height();
+		if (scrollpct2 > 0) {document.getElementById("BotChatGoesHere").style.height = '98.5vh'} else 
+		{document.getElementById("BotChatGoesHere").style.height = '0vh'};
+	});*/
+
 	$(document).on("scroll", function() {
-		var scrollpct = ($(document).scrollTop()- ($(window).height()*0.2))*1.5/$(window).height();
-		$(".about_me_blurb").css("opacity", scrollpct.toString());
+		var scrollpct3 = ($(document).scrollTop()- ($(window).height()*0.2))*1.5/$(window).height();
+		$(".about_me_blurb").css("opacity", scrollpct3.toString());
 	});
 
 	$(document).on("scroll", function() {
-		var scrollpct = ($(document).scrollTop()/($(window).height()*3.5))/5;
-		$(".graduation_pic").css("opacity", scrollpct.toString());
+		var scrollpct4 = ($(document).scrollTop()/($(window).height()*3.5))/5;
+		$(".graduation_pic").css("opacity", scrollpct4.toString());
 	});
 
 	$(document).on("scroll", function() {
-		var scrollpct = ($(document).scrollTop()- ($(window).height()*2.2))*1.5/$(window).height();
-		$(".hockey_blurb").css("opacity", scrollpct.toString());
+		var scrollpct5 = ($(document).scrollTop()- ($(window).height()*2.2))*1.5/$(window).height();
+		$(".hockey_blurb").css("opacity", scrollpct5.toString());
 	});
 
 /* NAV BAR ANIMATIONS */
@@ -118,7 +129,7 @@ $(document).on("scroll", function() {
 /* ABOUT ME NAV */
 
 	$(document).on("scroll", function() {
-		if (($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.9) {
+		if ((($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.9)) {
 			$(".about_me_nav_link").css("opacity", "1");
 		} else {$(".about_me_nav_link").css("opacity", ".2");
 	}
@@ -157,35 +168,3 @@ $(".education_nav_link").on("mouseout", function() {
 
 
 
-
-//fade in Booth concentrations when you hover over Booth Logo
-
-$(".chicagoBooth").mouseover(function() {
-	$(".chicagoBooth").fadeOut("fast", function (){
-		$("#slide-2 h2").height("40%");
-		$("#slide-2 h2").css("top", "20%");
-		$(".chicagoBooth").attr("src","img/mba_concentrations.png").fadeIn();
-	});
-})
-
-$(".chicagoBooth").mouseout(function() {
-	$(".chicagoBooth").fadeOut("fast", function (){
-		$("#slide-2 h2").height("60%");
-		$("#slide-2 h2").css("top", "10%");
-		$(".chicagoBooth").attr("src","https://jcalvomendoza.github.io/img/BoothLogo.png").fadeIn();
-	});
-})
-
-//fade in Colgate majors when you hover over Colgate logo
-
-$(".colgateUniversity").mouseover(function() {
-	$(".colgateUniversity").fadeOut("fast", function (){
-		$(".colgateUniversity").attr("src","img/ba_majors.png").fadeIn();
-	});
-})
-
-$(".colgateUniversity").mouseout(function() {
-	$(".colgateUniversity").fadeOut("fast", function (){
-		$(".colgateUniversity").attr("src","https://jcalvomendoza.github.io/img/Colgate University Logo.png").fadeIn();
-	});
-})

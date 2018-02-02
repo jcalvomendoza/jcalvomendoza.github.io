@@ -3,8 +3,12 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: white;
 }
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 0.7;
+  }
 
 .loading {
     background: linear-gradient(45deg, red, #FF6400);
@@ -16,7 +20,7 @@ textarea {
 main, body, html {
 	height: 100%;
 	min-height: 100%;
-    background-color: #ffffff;
+    background-color: linear-gradient(45deg, red, #FF6400);
     margin: 0;
 }
 
