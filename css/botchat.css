@@ -10,7 +10,7 @@
 
   #BotChatGoesHere {
     float: left;
-    height: 98.5vh;
+    height: 97vh;
     position: absolute;
     width: 30em;
   }
@@ -26,7 +26,7 @@
 /* reset */
 body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   font-family: 'Dosis', sans-serif;
-  font-size: 15px; }
+  font-size: 2.5vh; }
 
 .wc-app button {
   background-color: #0078d7;
