@@ -47,6 +47,7 @@ ul{
      margin: 10px;
  }
 
+.home_nav_link,
 .about_me_nav_link,
 .education_nav_link,
 .work_nav_link,
@@ -350,13 +351,15 @@ h2{
     overflow: hidden;
 }
 .work_blurb {
-    grid-column: 2/5;
-    text-align: right;
-    opacity: 0;
+    grid-column: 2/6;
+    grid-row: 2;
+    text-align: center;
+    opacity: 1;
     transition-duration: .2s
 }
 .work_blurb h1{
     margin: 15vh 4em 0 0;
+    text-align: center;
     font-size: 5vmin;
     font-weight: 100;
     font-family: 'Dosis', sans-serif;

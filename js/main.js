@@ -126,6 +126,15 @@ $(document).on("scroll", function() {
 
 /* NAV BAR ANIMATIONS */
 
+/* HOME NAV */
+
+$(".home_nav_link").on("mouseover", function() {
+	$(".home_nav_link").css("opacity", "1");
+});
+$(".home_nav_link").on("mouseout", function() {
+	$(".home_nav_link").css("opacity", ".2");
+});
+
 /* ABOUT ME NAV */
 
 	$(document).on("scroll", function() {
@@ -166,6 +175,15 @@ $(".education_nav_link").on("mouseout", function() {
 	}
 });
 
+/* WORK NAV */
+
+$(".work_nav_link").on("mouseover", function() {
+	$(".work_nav_link").css("opacity", "1");
+});
+$(".work_nav_link").on("mouseout", function() {
+	$(".work_nav_link").css("opacity", ".2");
+});
+
 /* PERSONAL NAV */
 
 /*$(document).on("scroll", function() {
@@ -186,3 +204,11 @@ $(".personal_nav_link").on("mouseout", function() {
 	}
 });
 
+/* CONTACT NAV */
+
+$(".contact_me_nav_link").on("mouseover", function() {
+	$(".contact_me_nav_link").css("opacity", "1");
+});
+$(".contact_me_nav_link").on("mouseout", function() {
+	$(".contact_me_nav_link").css("opacity", ".2");
+});
