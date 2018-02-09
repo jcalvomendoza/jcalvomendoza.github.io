@@ -99,7 +99,7 @@ $(document).on("scroll", function() {
 	/* Then I figured this badboy out */
 
 	$(document).on("scroll", function() {
-		var scrollpct1 = (($(window).height()*1) - $(document).scrollTop()*10)/$(window).height();
+		var scrollpct1 = (($(window).height()*1) - $(document).scrollTop()*3)/$(window).height();
 		document.getElementById("BotChatGoesHere").style.opacity = scrollpct1.toString();
 	});
 	

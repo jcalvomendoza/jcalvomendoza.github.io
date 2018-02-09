@@ -418,6 +418,10 @@ body .wc-app, .wc-app button, .wc-app input, .wc-app textarea {
   background-color: white;
   color: rgb(255, 72, 0); }
 
+.wc-message-from-bot a:link {
+color: rgb(255, 72, 0);
+opacity: 1; }
+
 .wc-message-from-bot svg.wc-message-callout path {
   fill: #eceff1; }
 
