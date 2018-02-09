@@ -166,5 +166,23 @@ $(".education_nav_link").on("mouseout", function() {
 	}
 });
 
+/* PERSONAL NAV */
 
+/*$(document).on("scroll", function() {
+	if ((($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.9)) {
+		$(".about_me_nav_link").css("opacity", "1");
+	} else {$(".about_me_nav_link").css("opacity", ".2");
+}
+});*/
+
+$(".personal_nav_link").on("mouseover", function() {
+	$(".personal_nav_link").css("opacity", "1");
+});
+$(".personal_nav_link").on("mouseout", function() {
+	if(($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.9){
+		$(".personal_nav_link").css("opacity", "1");
+	} else {
+	$(".personal_nav_link").css("opacity", ".2");
+	}
+});
 
