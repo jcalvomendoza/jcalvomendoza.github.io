@@ -1,6 +1,6 @@
-.js-loading *,
-.js-loading *:before,
-.js-loading *:after {
+.js-loading,
+.js-loading:before,
+.js-loading:after {
   animation-play-state: paused !important;
 }
 
@@ -329,7 +329,7 @@ h2{
     margin: 1vh 0 0 5.1em;
 }
 
-.graduation_pic {
+/*.graduation_pic {
     grid-column: 5/7;
     grid-row: 1/5;
     overflow: hidden;
@@ -340,7 +340,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .2;
-}
+}*/
 
 .work {
     display: grid;
