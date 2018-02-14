@@ -51,6 +51,7 @@ ul{
      color: #ffffff;
      display: inline;
      margin: 10px;
+     cursor: pointer;
  }
 
 .home_nav_link,
@@ -250,6 +251,7 @@ h1:hover{
     font-weight: 100;
     font-family: 'Dosis', sans-serif;
     transition: opacity 500ms ease-in-out;
+    cursor: pointer;
 }
 
 @keyframes learn_more {

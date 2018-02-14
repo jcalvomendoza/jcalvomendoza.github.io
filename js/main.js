@@ -117,9 +117,29 @@ $(document).on("scroll", function() {
 		$(".hockey_blurb").css("opacity", scrollpct5.toString());
 	});
 
-/* NAV BAR ANIMATIONS */
+/* NAVIGATION ANIMATIONS */
+
+/*learn more scroll*/
+
+$(".learn_more").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#about_me").offset().top
+	});
+  });
 
 /* HOME NAV */
+
+$(".home_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#home").offset().top
+	});
+  });
+
+$(".home_nav_link").on("mouseover", function() {
+	$('html, body').animate({
+		scrollTop: $("#home").offset().top
+	  });
+});
 
 $(".home_nav_link").on("mouseover", function() {
 	$(".home_nav_link").css("opacity", "1");
@@ -130,25 +150,49 @@ $(".home_nav_link").on("mouseout", function() {
 
 /* ABOUT ME NAV */
 
-	$(document).on("scroll", function() {
-		if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
-			$(".about_me_nav_link").css("opacity", "1");
-		} else {$(".about_me_nav_link").css("opacity", ".2");
-	}
+$(".about_me_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#about_me").offset().top
 	});
+  });
 
-	$(".about_me_nav_link").on("mouseover", function() {
+$(".about_me_nav_link").on("mouseover", function() {
+	$('html, body').animate({
+		scrollTop: $("#about_me").offset().top
+	  });
+});
+
+$(document).on("scroll", function() {
+	if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
 		$(".about_me_nav_link").css("opacity", "1");
-	});
-	$(".about_me_nav_link").on("mouseout", function() {
-		if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
-			$(".about_me_nav_link").css("opacity", "1");
-		} else {
-		$(".about_me_nav_link").css("opacity", ".2");
-		}
-	});
+	} else {$(".about_me_nav_link").css("opacity", ".2");
+}
+});
+
+$(".about_me_nav_link").on("mouseover", function() {
+	$(".about_me_nav_link").css("opacity", "1");
+});
+$(".about_me_nav_link").on("mouseout", function() {
+	if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
+		$(".about_me_nav_link").css("opacity", "1");
+	} else {
+	$(".about_me_nav_link").css("opacity", ".2");
+	}
+});
 
 /* EDUCATION NAV */
+
+$(".education_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#education").offset().top
+	});
+  });
+
+  $(".education_nav_link").on("mouseover", function() {
+	$('html, body').animate({
+		scrollTop: $("#education").offset().top
+	  });
+});
 
 $(document).on("scroll", function() {
 	if (($(document).scrollTop()/($(window).height())) > 1.7 && ($(document).scrollTop()/($(window).height())) < 2.7 ) {
@@ -170,6 +214,12 @@ $(".education_nav_link").on("mouseout", function() {
 
 /* WORK NAV */
 
+$(".work_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#work").offset().top
+	});
+  });
+
 $(document).on("scroll", function() {
 	if (($(document).scrollTop()/($(window).height())) > 2.7 && ($(document).scrollTop()/($(window).height())) < 3.7 ) {
 		$(".work_nav_link").css("opacity", "1");
@@ -178,8 +228,21 @@ $(document).on("scroll", function() {
 });
 
 $(".work_nav_link").on("mouseover", function() {
+	$('html, body').animate({
+		scrollTop: $("#work").offset().top
+	  });
+});
+
+/*$(".work_nav_link").on("mouseout", function() {
+	$('html, body').animate({
+		scrollTop: $("#home").offset().top
+	  });
+});*/
+
+$(".work_nav_link").on("mouseover", function() {
 	$(".work_nav_link").css("opacity", "1");
 });
+
 $(".work_nav_link").on("mouseout", function() {
 	if (($(document).scrollTop()/($(window).height())) > 2.7 && ($(document).scrollTop()/($(window).height())) < 3.7 ) {
 		$(".work_nav_link").css("opacity", "1");
@@ -189,12 +252,19 @@ $(".work_nav_link").on("mouseout", function() {
 
 /* PERSONAL NAV */
 
-/*$(document).on("scroll", function() {
-	if ((($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.9)) {
-		$(".about_me_nav_link").css("opacity", "1");
-	} else {$(".about_me_nav_link").css("opacity", ".2");
-}
-});*/
+$(".personal_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#hockey").offset().top
+	});
+  });
+
+
+  $(".personal_nav_link").on("mouseover", function() {
+	$('html, body').animate({
+		scrollTop: $("#hockey").offset().top
+	  });
+});
+  
 
 $(document).on("scroll", function() {
 	if (($(document).scrollTop()/($(window).height())) > 3.7) {
@@ -206,6 +276,7 @@ $(document).on("scroll", function() {
 $(".personal_nav_link").on("mouseover", function() {
 	$(".personal_nav_link").css("opacity", "1");
 });
+
 $(".personal_nav_link").on("mouseout", function() {
 	if (($(document).scrollTop()/($(window).height())) > 3.7) {
 		$(".personal_nav_link").css("opacity", "1");
@@ -214,6 +285,12 @@ $(".personal_nav_link").on("mouseout", function() {
 });
 
 /* CONTACT NAV */
+
+$(".contact_me_nav_link").click(function(){
+	$('html, body').animate({
+	  scrollTop: $("#contact_me").offset().top
+	});
+  });
 
 $(".contact_me_nav_link").on("mouseover", function() {
 	$(".contact_me_nav_link").css("opacity", "1");
