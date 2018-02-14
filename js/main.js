@@ -1,11 +1,4 @@
- /**
- * This demo was prepared for you by Petr Tichy - Ihatetomatoes.net
- * Want to see more similar demos and tutorials?
- * Help by spreading the word about Ihatetomatoes blog.
- * Facebook - https://www.facebook.com/ihatetomatoesblog
- * Twitter - https://twitter.com/ihatetomatoes
- * Google+ - https://plus.google.com/u/0/109859280204979591787/about
- * Article URL: http://ihatetomatoes.net/simple-parallax-scrolling-tutorial/
+ /*
  */
 
 $(window).load(function() {
@@ -120,7 +113,7 @@ $(document).on("scroll", function() {
 	});
 
 	$(document).on("scroll", function() {
-		var scrollpct5 = ($(document).scrollTop()- ($(window).height()*2.2))*1.5/$(window).height();
+		var scrollpct5 = ($(document).scrollTop()- ($(window).height()*3.2))*1.5/$(window).height();
 		$(".hockey_blurb").css("opacity", scrollpct5.toString());
 	});
 
@@ -138,7 +131,7 @@ $(".home_nav_link").on("mouseout", function() {
 /* ABOUT ME NAV */
 
 	$(document).on("scroll", function() {
-		if ((($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.9)) {
+		if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
 			$(".about_me_nav_link").css("opacity", "1");
 		} else {$(".about_me_nav_link").css("opacity", ".2");
 	}
@@ -148,7 +141,7 @@ $(".home_nav_link").on("mouseout", function() {
 		$(".about_me_nav_link").css("opacity", "1");
 	});
 	$(".about_me_nav_link").on("mouseout", function() {
-		if(($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.9){
+		if ((($(document).scrollTop()/($(window).height())) > .7 && ($(document).scrollTop()/($(window).height())) < 1.1) || (($(document).scrollTop()/($(window).height())) > 1.6 && ($(document).scrollTop()/($(window).height())) < 1.7)) {
 			$(".about_me_nav_link").css("opacity", "1");
 		} else {
 		$(".about_me_nav_link").css("opacity", ".2");
@@ -158,7 +151,7 @@ $(".home_nav_link").on("mouseout", function() {
 /* EDUCATION NAV */
 
 $(document).on("scroll", function() {
-	if (($(document).scrollTop()/($(window).height())) > 1.9 && ($(document).scrollTop()/($(window).height())) < 2.9) {
+	if (($(document).scrollTop()/($(window).height())) > 1.7 && ($(document).scrollTop()/($(window).height())) < 2.7 ) {
 		$(".education_nav_link").css("opacity", "1");
 	} else {$(".education_nav_link").css("opacity", ".2");
 }
@@ -176,6 +169,13 @@ $(".education_nav_link").on("mouseout", function() {
 });
 
 /* WORK NAV */
+
+$(document).on("scroll", function() {
+	if (($(document).scrollTop()/($(window).height())) > 2.7 && ($(document).scrollTop()/($(window).height())) < 3.7 ) {
+		$(".work_nav_link").css("opacity", "1");
+	} else {$(".work_nav_link").css("opacity", ".2");
+}
+});
 
 $(".work_nav_link").on("mouseover", function() {
 	$(".work_nav_link").css("opacity", "1");
