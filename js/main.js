@@ -181,7 +181,10 @@ $(".work_nav_link").on("mouseover", function() {
 	$(".work_nav_link").css("opacity", "1");
 });
 $(".work_nav_link").on("mouseout", function() {
-	$(".work_nav_link").css("opacity", ".2");
+	if (($(document).scrollTop()/($(window).height())) > 2.7 && ($(document).scrollTop()/($(window).height())) < 3.7 ) {
+		$(".work_nav_link").css("opacity", "1");
+	} else {$(".work_nav_link").css("opacity", ".2");
+}
 });
 
 /* PERSONAL NAV */
@@ -193,15 +196,21 @@ $(".work_nav_link").on("mouseout", function() {
 }
 });*/
 
+$(document).on("scroll", function() {
+	if (($(document).scrollTop()/($(window).height())) > 3.7) {
+		$(".personal_nav_link").css("opacity", "1");
+	} else {$(".personal_nav_link").css("opacity", ".2");
+}
+});
+
 $(".personal_nav_link").on("mouseover", function() {
 	$(".personal_nav_link").css("opacity", "1");
 });
 $(".personal_nav_link").on("mouseout", function() {
-	if(($(document).scrollTop()/($(window).height())) > .9 && ($(document).scrollTop()/($(window).height())) < 1.9){
+	if (($(document).scrollTop()/($(window).height())) > 3.7) {
 		$(".personal_nav_link").css("opacity", "1");
-	} else {
-	$(".personal_nav_link").css("opacity", ".2");
-	}
+	} else {$(".personal_nav_link").css("opacity", ".2");
+}
 });
 
 /* CONTACT NAV */
