@@ -354,7 +354,7 @@ h2{
     background-position: center center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 100%;
+	height: 80%;
     width: 100%;
     overflow: hidden;
 }
@@ -373,6 +373,73 @@ h2{
     font-family: 'Dosis', sans-serif;
 }
 
+.skills {
+    background-image:url("https://jcalvomendoza.github.io/img/Chicago.jpg"), linear-gradient(45deg, red, #FF6400);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 20%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.marquee {
+  position:relative;
+  height:10%;
+  width:2000px;
+  animation: horizontal_skill_scroll 10s linear infinite;
+  }
+
+.marquee:hover {
+    animation-play-state: paused
+}
+
+.neo4j_logo {
+    width:150px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/Neo4j.png");
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.rstudio_logo {
+    width:150px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/Neo4j.png");
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.sketch_logo {
+    width:150px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/Neo4j.png");
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  margin-top:5vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.skill_space {
+    width:150px;
+  height:15vh;
+  margin:3px;
+  float:left;
+}
+
+@keyframes horizontal_skill_scroll{
+0% {left:10%;}
+100% {left:-10%;}
+}
 
 .hockey {
     display: grid;
