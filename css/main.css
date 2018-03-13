@@ -388,8 +388,8 @@ h2{
 .marquee {
   position:relative;
   height:10%;
-  width:2000px;
-  animation: horizontal_skill_scroll 10s linear infinite;
+  width:5000px;
+  animation: horizontal_skill_scroll 18s linear infinite;
   }
 
 .marquee:hover {
@@ -424,7 +424,40 @@ h2{
   background-image:url("https://jcalvomendoza.github.io/img/sketch.png");
   background-size: 10vh;
   background-repeat: no-repeat;
-  margin-top:5vh;
+  margin-top:6vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.framer_logo {
+    width:150px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/framer.png");
+  background-size: 7vh;
+  background-repeat: no-repeat;
+  margin-top:6vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.cc_logo {
+    width:150px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/cc.png");
+  background-size: 10vh;
+  background-repeat: no-repeat;
+  margin-top:6vh;
+  margin-bottom: 2vh;
+  float:left;
+}
+
+.microsoft_office_logo {
+    width:250px;
+  height:150px;
+  background-image:url("https://jcalvomendoza.github.io/img/microsoft_office.png");
+  background-size: 25vh;
+  background-repeat: no-repeat;
+  margin-top:6vh;
   margin-bottom: 2vh;
   float:left;
 }
@@ -437,8 +470,8 @@ h2{
 }
 
 @keyframes horizontal_skill_scroll{
-0% {left:10%;}
-100% {left:-10%;}
+0% {left:-0px;}
+100% {left:-1935px;}
 }
 
 .hockey {
