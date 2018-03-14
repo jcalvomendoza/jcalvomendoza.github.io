@@ -245,6 +245,7 @@ h1:hover{
   height:100px;
   background-size: 500px;
   background-repeat: no-repeat;
+  top: 91.5vh;
   bottom: -100vh;
   margin-left: 0.3em;
   position: absolute;
