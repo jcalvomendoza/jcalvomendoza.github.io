@@ -235,6 +235,17 @@ h1:hover{
     100% {opacity: 0;}
 }
 
+.bot_image {
+    background-image:url("https://jcalvomendoza.github.io/img/bot_image-01.png");
+    width:250px;
+  height:150px;
+  background-size: 5vh;
+  background-repeat: no-repeat;
+  margin-top:91.5vh;
+  margin-left: 1vh;
+  float:left;
+  position: absolute;
+}
 
 .learn_more {
     grid-column: 1/8;
