@@ -6,7 +6,6 @@
 
 html,
 button,
-input,
 select,
 textarea {
     color: white;
@@ -16,6 +15,10 @@ textarea {
     opacity: 1;
   }
 
+input {
+    color: red;
+  }
+  
 .loading {
     background: linear-gradient(45deg, red, #FF6400);
     -webkit-transition: none;
@@ -237,9 +240,9 @@ h1:hover{
 
 .bot_image {
     background-image:url("https://jcalvomendoza.github.io/img/botchat_with_dialog_box.png");
-    width:250px;
+    width:100%;
   height:150px;
-  background-size: 30vh;
+  background-size: 42vh;
   background-repeat: no-repeat;
   margin-top:91.5vh;
   margin-left: 1vh;
