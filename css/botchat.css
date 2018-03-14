@@ -10,7 +10,8 @@
 
   #BotChatGoesHere {
     float: left;
-    height: 97vh;
+    top: 1em;
+    height: 95vh;
     position: absolute;
     width: 30em;
     z-index: 1;
