@@ -13,6 +13,7 @@
     height: 97vh;
     position: absolute;
     width: 30em;
+    z-index: 1;
   }
 
  /* #BotChatGoesHere.wc-wide {
