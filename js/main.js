@@ -92,10 +92,14 @@ $(document).on("scroll", function() {
 	/* Then I figured this badboy out */
 
 	$(document).on("scroll", function() {
-		var scrollpct1 = (($(window).height()*1) - $(document).scrollTop()*3)/$(window).height();
+		var scrollpct1 = (($(window).height()*1) - $(document).scrollTop()*15)/$(window).height();
 		document.getElementById("BotChatGoesHere").style.opacity = scrollpct1.toString();
+			if ($(document).scrollTop() == 0) {
+				$(".bot_image").css("top", ("91.5vh"));
+			} else { $(".bot_image").css("top", ((($(document).scrollTop()/15)+91.5).toString()+"vh"));
+		}
 	});
-	
+
 /*	$(document).on("scroll", function() {
 		var scrollpct2 = (($(window).height()*1) - $(document).scrollTop()*9)/$(window).height();
 		if (scrollpct2 > 0) {document.getElementById("BotChatGoesHere").style.height = '98.5vh'} else 
