@@ -1,4 +1,7 @@
- /*
+ /* Well Hello there
+ General Kenobi!
+
+ I appologize for how crappy this JS might be. I'm not JS expert. I simply started looking for examples on GitHub and Stack Overflow and eventually more or less how to animate the different elements I wanted to animate, so it's very haphazard as opposed to maintainable. :(
  */
 
 $(window).load(function() {
